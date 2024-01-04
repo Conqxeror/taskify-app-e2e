@@ -24,7 +24,7 @@ export const ProModal = () => {
   const onClick = () => {
     execute({});
   };
-
+  
   return (
     <Dialog
       open={proModal.isOpen}
