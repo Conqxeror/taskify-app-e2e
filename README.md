@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Fullstack Trello Clone: Next.js 14, Server Actions, React, Prisma, Stripe, Tailwind, MySQL
 
-## Getting Started
 
-First, run the development server:
+![Screenshot](https://github.com/Conqxeror/trello-clone-e2e/assets/110852661/e43d0ff5-0c10-4379-92d1-59d004af14a2)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Overview:**
+Welcome to the Fullstack Trello Clone, a meticulously crafted project offering a comprehensive task management solution. Leveraging the power of Next.js 14, Server Actions, React, Prisma, Stripe, Tailwind, and MySQL, this project stands as a testament to modern web development practices.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Key Features:**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. **Authentication:**
+   Secure and seamless user authentication ensures a personalized experience for every user.
 
-## Learn More
+2. **Organizations / Workspaces:**
+   Efficiently organize your workflow by creating and managing distinct organizations or workspaces.
 
-To learn more about Next.js, take a look at the following resources:
+3. **Board Operations:**
+   Empower users to create, rename, and delete boards, with the added aesthetic touch of random beautiful cover images from the Unsplash API.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. **Activity Logging:**
+   A comprehensive activity log keeps track of all actions within an organization, providing valuable insights into the workflow.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+5. **List Management:**
+   Create, rename, delete, and effortlessly reorder lists with intuitive drag & drop functionality.
 
-## Deploy on Vercel
+6. **Card Operations:**
+   Take control of your tasks with features like card creation, renaming, deletion, drag & drop reordering, and duplication.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+7. **Board Limits and Subscriptions:**
+   Set board limits for organizations and unlock the full potential with Stripe subscriptions, enabling unlimited boards.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+8. **Landing Page:**
+   A visually appealing landing page welcomes users and introduces them to the powerful capabilities of the application.
+
+9. **Database and ORM:**
+   The application is backed by a MySQL database managed through Prisma ORM, ensuring efficient and scalable data operations.
+
+10. **UI Frameworks:**
+    ShadcnUI and TailwindCSS collaborate to create a sleek and responsive user interface, enhancing the overall user experience.
+
+**Prerequisites:**
+Ensure Node.js version 18.x.x is installed on your system before diving into the setup process.
+
+**Getting Started:**
+
+1. **Clone the Repository:**
+   ```
+   git clone https://github.com/AntonioErdeljac/next13-trello.git
+   ```
+
+2. **Install Packages:**
+   ```
+   npm i
+   ```
+
+3. **Set Up Environment Variables:**
+   Configure your environment variables, including Clerk, database, Unsplash, Stripe, and app-specific details.
+
+4. **Prisma Setup:**
+   ```
+   npx prisma generate
+   npx prisma db push
+   ```
+
+5. **Start the Application:**
+   ```
+   npm run dev
+   ```
